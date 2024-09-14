@@ -8,7 +8,7 @@ conda env create -f conda_env.yml
 ```
 
 # Hierarchical clustering
-In order to obtain the initial reaction substrate, the following steps were adopted:<br>
+In order to obtain the initial reactant, the following steps were adopted:<br>
 1. Assembled about 5,400 purchasable aryl halides from the inventory of common chemical suppliers through data mining.<br>
 2. Using a hierarchical clustering strategy, the building blocks in these chemical Spaces were grouped according to their common aromatic ring substructures and hanging functions, and 54 of the most representative molecules were selected.<br>
 3. Combining these molecules with 54 commercially available aryl n-methyliminodiacetic acid (MIDA) borates defined a subselected matrix range of 2688 representative cross-coupled products. Subsequently, based on Tanimoto's similarity greedy algorithm, this work identifies 11 representative substrate pairs from the range to maximize the mutual dissimilarity of the resulting products.<br>
