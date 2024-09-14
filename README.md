@@ -23,7 +23,7 @@ The file ```REPRO_clusters_r3_marked_selected.csv``` will contain the selection 
 After obtaining an initial set of 11 reactants, 7 different conditions were used on each set of reactants, and the initial result data set was ```MADNESS_suzuki_coupling_results.csv```.<br>
 In addition to the starting data, we need the following files before we can proceed with the Closed-loop process:<br>
 1. A JSON file ```cache.json```, which have to provide a field ``url`` pointing to the spreadsheet, it can also point directly to the csv file name where the data is stored.<br>
-2. JAON file ```space_dict.json```, ```current_space_dict.json```, ```current_space.json``` they represent the space of possible reaction conditions the format is as follows:
+2. JAON files ```space_dict.json```, ```current_space_dict.json```, ```current_space.json``` they represent the space of possible reaction conditions the format is as follows:
 ```
 {
 	"base":        ["Na2CO3", "K3PO4"], 
@@ -32,6 +32,8 @@ In addition to the starting data, we need the following files before we can proc
 	"temperature": [60, 100]
 }
 ```
+Then you can start running ```do_step.py``` - script that a) downloads the speadsheet from shared Google drive(or directly get from the csv file), b) trains the model and makes prediction for the next step and c) uploads next reactions to the shared Google drive.<br>
+
 
    
 
