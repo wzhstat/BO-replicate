@@ -33,9 +33,10 @@ In addition to the starting data, we need the following files before we can proc
 	"temperature": [60, 100]
 }
 ```
-I have put the corresponding files for Suzuki coupling under the ```Nanotekton-hangman-d5672b1``` folder <br>
+I have put the corresponding files for Suzuki coupling under the ```Closed_loop``` folder <br>
 Then you can start running ```do_step.py``` - script that a) downloads the speadsheet from shared Google drive(or directly get from the csv file), b) trains the model and makes prediction for the next step and c) uploads next reactions to the shared Google drive.<br>
-Note: The ```update_gdirve``` option requires a properly configured ```rclone```.
+Note: The ```update_gdirve``` option requires a properly configured ```rclone```.<br>
+The experimental data of multiple rounds in the paper were recorded in ```MADNESS_suzuki_coupling_results - Arkusz1.csv```
 
 
    
