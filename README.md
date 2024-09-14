@@ -33,6 +33,7 @@ In addition to the starting data, we need the following files before we can proc
 }
 ```
 Then you can start running ```do_step.py``` - script that a) downloads the speadsheet from shared Google drive(or directly get from the csv file), b) trains the model and makes prediction for the next step and c) uploads next reactions to the shared Google drive.<br>
+Note: The ```update_gdirve``` option requires a properly configured ```rclone```.
 
 
    
