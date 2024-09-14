@@ -18,5 +18,20 @@ In order to perform clusterization & selection (with all comercially available b
 python cluster_balanced.py --radius 3 --mark -N 40 --out_core REPRO  all_aryls.csv
 ```
 The file ```REPRO_clusters_r3_marked_selected.csv``` will contain the selection of bromides used in the study.<br>
+
+# Closed-loop
+After obtaining an initial set of 11 reactants, 7 different conditions were used on each set of reactants, and the initial result data set was ```MADNESS_suzuki_coupling_results.csv```.<br>
+In addition to the starting data, we need the following files before we can proceed with the Closed-loop process:<br>
+1. A JSON file ```cache.json```, which have to provide a field ``url`` pointing to the spreadsheet, it can also point directly to the csv file name where the data is stored.<br>
+2. JAON file ```space_dict.json```, ```current_space_dict.json```, ```current_space.json``` they represent the space of possible reaction conditions the format is as follows:
+```
+{
+	"base":        ["Na2CO3", "K3PO4"], 
+	"solvent":     ["Toluene:water", "1,4-dioxane:water", "DMF:water"],
+	"ligand":      ["P(tBu)3", "PPh3", "Pcy3", "SPhos", "XPhos", "dba", "dppf"],
+	"temperature": [60, 100]
+}
+```
+
    
 
